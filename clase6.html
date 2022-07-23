@@ -24,6 +24,23 @@
             margin: 0;
             font-family: 'Quicksand', sans-serif;
         }
+        .cards-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 240px);
+        }
+        .product-card{
+            width: 240px;
+        }
+        .product-card img {
+            width: 240px;
+            height: 240px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+        .product-card figure{
+            width: 30px;
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -32,7 +49,7 @@
 
             <div class="product-card">
                 <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                <div>
+                <div class="product-info">
                     <p>120,00</p>
                     <p>Bike</p>
                 </div>
